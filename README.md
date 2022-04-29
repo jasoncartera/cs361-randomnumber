@@ -1,5 +1,5 @@
 # cs361-randomnumber
-Randon number generator microservice for CS361 project
+Random number generator microservice for CS361 project
 
 Steps to use:
 - Install Java 17
