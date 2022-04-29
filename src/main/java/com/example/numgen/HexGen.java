@@ -41,10 +41,6 @@ public class HexGen {
         }
     }
 
-    public String getRandString() {
-        return this.randString;
-    }
-
     public String getHex() {
         return hashString(this.randString);
     }
