@@ -12,6 +12,7 @@ public class HexGen {
     private String randString = this.genString();
 
     private String genString() {
+        // Generates a random string of 64 characters
         String values = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         Random rand = new Random();
         for (int i = 0; i < 64; i++) {
@@ -23,6 +24,7 @@ public class HexGen {
     }
 
     private String hashString(String input) {
+        // Generates a MD5 hash from a randomly generated 64 character length string
         MessageDigest md;
         try {
             md = MessageDigest.getInstance("MD5");

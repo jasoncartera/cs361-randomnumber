@@ -9,6 +9,13 @@ Steps to use:
 - Navigate to the directory and run: java -jar target/numgen-0.0.1-SNAPSHOT.jar
 - You may also run without building: ./mvnw spring-boot:run
 
-The endpoint will be http://localhost:8080/
+Generate random integers from 0 to 2,147,483,647 with this endpoint:
+- http://localhost:8080/
+
+Specify an upper and lower range with query paramters: http://localhost:8080/?lower=100&upper=10000
+
+Generate a random MD5 Hash from a random 64 character length string:
+
+http://localhost:8080/hex
 
 
