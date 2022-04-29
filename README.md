@@ -12,7 +12,9 @@ Steps to use:
 Generate random integers from 0 to 2,147,483,647 with this endpoint:
 - http://localhost:8080/
 
-Specify an upper and lower range with query paramters: http://localhost:8080/?lower=100&upper=10000
+Specify an upper and lower range with query paramters: 
+- http://localhost:8080/?lower=100&upper=10000
+- Use upper, lower, or both
 
 Generate a random MD5 Hash from a random 64 character length string:
 
