@@ -8,7 +8,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class Controller { 
 
     @GetMapping("/")
-    public NumGen numgen(@RequestParam(value = "lower", defaultValue = "1") int lower, @RequestParam(value = "upper", defaultValue = "2147483647") int upper) {
+    public NumGen numgen(@RequestParam(value = "lower", defaultValue = "0") int lower, @RequestParam(value = "upper", defaultValue = "2147483647") int upper) {
         return new NumGen(lower, upper);
+    }
+
+    @GetMapping("/hex")
+    public HexGen hexgen() {
+        return new HexGen();
     }
 }

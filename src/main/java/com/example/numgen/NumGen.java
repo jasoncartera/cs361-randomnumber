@@ -1,5 +1,5 @@
 package com.example.numgen;
-import java.lang.Math;
+import java.util.Random;
 
 public class NumGen {
 
@@ -13,8 +13,9 @@ public class NumGen {
         this.randNum = this.GenRandom();
     }
 
-    public int GenRandom() {
-        int random_int = (int)Math.floor(Math.random()*(this.upper-this.lower+1)+this.lower);
+    private int GenRandom() {
+        Random rand = new Random();
+        int random_int = rand.nextInt(this.upper - this.lower) + this.lower;
         return random_int;
     }
 
