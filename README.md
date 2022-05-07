@@ -1,7 +1,11 @@
 # cs361-randomnumber
 Random number generator microservice for CS361 project
 
-Steps to use:
+To use with Docker:
+- docker build -t numgen .
+- docker run -p 8080:8080 numgen
+
+Build with Maven:
 - Install Java 17
 - Clone the project
 - Install Maven: https://maven.apache.org/
